@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: serive-zipkin
+server:
+  port: 8769
+
+
+
+logging:
+  level:
+    root: ERROR
+    org:
+      springframework:
+        web: ERROR
+      hibernate: ERROR
+      mybatis: ERROR
+  path: D:/logs/server.log
+#  file: ./logs/server.log

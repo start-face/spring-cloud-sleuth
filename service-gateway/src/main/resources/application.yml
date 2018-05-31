@@ -2,10 +2,10 @@ spring:
   application:
     name: service-gateway
   zipkin:
-    base-url: http://localhost:8761
+    base-url: http://localhost:8769
   sleuth:
     sampler:
-      percentage: 1.0
+      percentage: 1
 
 zuul:
   routes:
@@ -31,5 +31,5 @@ logging:
         web: ERROR
       hibernate: ERROR
       mybatis: ERROR
-    path: D:/temp/logs/service-gateway.log
+#    path: D:/temp/logs/service-gateway.log
 #  file: ./logs/service-gateway.log

@@ -20,7 +20,7 @@
 
     <modules>
         <module>service-server</module>
-        <module>zipkin-server</module>
+        <module>service-zipkin</module>
         <module>service-user</module>
         <module>service-gateway</module>
     </modules>
