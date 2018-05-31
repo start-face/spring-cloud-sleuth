@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: service-gateway
+  zipkin:
+    base-url: http://localhost:8761
+  sleuth:
+    sampler:
+      percentage: 1.0
+
+zuul:
+  routes:
+    api-a:
+      path: /user-api/**
+      serviceId: service-user
+
+server:
+  port: 8763
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+
+logging:
+  level:
+    root: ERROR
+    org:
+      springframework:
+        web: ERROR
+      hibernate: ERROR
+      mybatis: ERROR
+    path: D:/temp/logs/service-gateway.log
+#  file: ./logs/service-gateway.log

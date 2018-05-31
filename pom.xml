@@ -7,6 +7,7 @@
     <groupId>com.sleuth.cloud</groupId>
     <artifactId>sleuth</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <name>sleuth</name>
     <url>http://www.example.com</url>
@@ -21,6 +22,7 @@
         <module>service-server</module>
         <module>zipkin-server</module>
         <module>service-user</module>
+        <module>service-gateway</module>
     </modules>
 
     <dependencies>
