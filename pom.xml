@@ -20,6 +20,7 @@
     <modules>
         <module>service-server</module>
         <module>zipkin-server</module>
+        <module>service-user</module>
     </modules>
 
     <dependencies>
@@ -65,5 +66,19 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.yml</include>
+                    <include>**/*.xml</include>
+                    <include>**/*.tld</include>
+                    <include>**/*.conf</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     </build>
 </project>
